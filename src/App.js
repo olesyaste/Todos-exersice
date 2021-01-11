@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import React from 'react';
 import './App.css';
+import Counter from './components/Counter';
 const axios = require('axios');
 
 const list = ['test1', 'test2', 'test3'];
@@ -23,6 +24,7 @@ render() {
 
   return (
     <>
+    <Counter counter = {9} />
       <ul>
         {list.map(el => {
          return <li style={{color: 'green'}}>{el}</li>
